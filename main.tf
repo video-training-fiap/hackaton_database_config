@@ -9,7 +9,7 @@ resource "aws_db_instance" "hackaton_prod" {
   instance_class         = "db.t2.micro"
   db_name                = "hackaton"
   username               = "admin"
-  password               = "8r_FA29zLQ#^6n"
+  password               = var.db_password
   allocated_storage      = 20
   storage_type           = "gp2"
   skip_final_snapshot    = true
